@@ -11,7 +11,10 @@ st.title("📄 PDF Q&A Bot")
 @st.cache_resource
 def load_models():
     embed_model = SentenceTransformer("all-MiniLM-L6-v2")
-    qa_model = pipeline("question-answering")
+    qa_model = pipeline(
+    task="question-answering",
+    model="distilbert-base-cased-distilled-squad"
+)
     return embed_model, qa_model
 
 embed_model, qa_model = load_models()
