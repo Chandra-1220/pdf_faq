@@ -1,6 +1,6 @@
 streamlit
-transformers
 sentence-transformers
+transformers
 torch
 faiss-cpu
 pypdf
