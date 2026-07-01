@@ -1,7 +1,9 @@
 streamlit
-sentence-transformers
 transformers
+sentence-transformers
 torch
 faiss-cpu
 pypdf
 numpy
+sentencepiece
+accelerate
